@@ -1,0 +1,174 @@
+html
+body
+  margin 0
+  padding 0
+  font-family 'Roboto', sans-serif
+  font-size 14px
+  text-align center
+*
+  box-sizing border-box
+.cont-grid
+  display grid
+  grid-template-columns repeat(3, 10rem)
+  grid-gap 2rem
+  align-content center
+  justify-content center
+  margin-top 2rem
+  
+.btn
+  background-color hsl(195, 70%, 24%)
+  color hsl(195, 10%, 90%)
+  padding 1rem 2rem
+  display inline-block
+  font-size 1.5rem
+  cursor pointer
+  position relative
+  user-select none
+  transition 0.3s
+  &:hover
+    background-color hsl(195, 60%, 30%)
+  &:active
+    background-color hsl(195, 80%, 20%)
+  
+.btn.st1
+  &:hover
+    background-color hsl(195, 60%, 30%)
+    &::before
+    &::after
+      border-color hsl(195, 60%, 30%)
+      transition 0.3s
+    &::before
+      top -0.5em
+      left -0.5em
+    &::after
+      bottom -0.5em
+      right -0.5em
+  &::before
+  &::after
+    content ' '
+    transition 0.3s
+    height 50%
+    width 50%
+    position absolute
+    border-color hsl(195, 70%, 24%)
+    border-width 0.15em
+    background-color transparent
+  &::before
+    top -0.15em
+    left -0.15em
+    border-style solid none none solid
+  &::after
+    bottom -0.15em
+    right -0.15em
+    border-style none solid solid none
+  &:active
+    background-color hsl(195, 80%, 20%)
+      
+.btn.st2
+  &::before
+  &::after
+    content ' '
+    transition 0.3s
+    height 100%
+    width 1em
+    position absolute
+    top 0
+    border none
+  &::before
+    left 0
+    border-left 0.15em solid hsl(195, 70%, 24%)
+  &::after
+    right 0
+    border-right 0.15em solid hsl(195, 70%, 24%)
+  &:hover
+    &::before
+    &::after
+      border-color hsl(195, 70%, 24%)
+    &::before
+      left -0.5em
+    &::after
+      right -0.5em
+      
+.btn.st3
+  &::before
+  &::after
+    content ''
+    position absolute
+    width 1em
+    height 100%
+    transition 0.3s
+  &::before
+    top -0.1em
+    left -0.1em
+    border-radius 2em 0 0 0
+    border-top 0.1em solid white
+    border-left 0.1em solid white
+  &::after
+    bottom -0.1em
+    right -0.1em
+    border-radius 0 0 2em 0
+    border-bottom 0.1em solid white
+    border-right 0.1em solid white
+  &:hover
+   &::before
+   &::after
+     border-radius 0
+    
+.btn.st4
+  &::before
+    content ''
+    position absolute
+    top 0
+    left 2px
+    height 100%
+    width 1em
+    border-radius 50%
+    box-shadow -4px 0px 0px 4px hsl(195, 80%, 20%)
+  &::after
+    content ''
+    position absolute
+    top 0
+    right 2px
+    height 100%
+    width 1em
+    border-radius 50%
+    box-shadow 4px 0px 0px 4px hsl(195, 80%, 20%)
+    
+.btn.st5
+  &::before
+  &::after
+    transition 0.3s
+    content ''
+    position absolute
+    top 0
+    height 100%
+    width 0.1em
+  &::before
+    left 0
+    box-shadow -2px 0px 0px 0 hsl(195, 70%, 30%),
+               -4px 0px 0px 0 hsl(195, 70%, 40%),
+               -6px 0px 0px 0 hsl(195, 70%, 50%),
+               -8px 0px 0px 0 hsl(195, 70%, 60%)
+  &::after
+    right 0
+    box-shadow 2px 0px 0px 0 hsl(195, 70%, 30%),
+               4px 0px 0px 0 hsl(195, 70%, 40%),
+               6px 0px 0px 0 hsl(195, 70%, 50%),
+               8px 0px 0px 0 hsl(195, 70%, 60%)
+  &:hover
+    &::before
+      transition 0.3s
+      box-shadow -4px 0px 0px 0 hsl(195, 70%, 30%),
+                 -8px 0px 0px 0 hsl(195, 70%, 40%),
+                 -12px 0px 0px 0 hsl(195, 70%, 50%),
+                 -16px 0px 0px 0 hsl(195, 70%, 60%)
+    &::after
+      transition 0.3s
+      box-shadow 4px 0px 0px 0 hsl(195, 70%, 30%),
+                 8px 0px 0px 0 hsl(195, 70%, 40%),
+                 12px 0px 0px 0 hsl(195, 70%, 50%),
+                 16px 0px 0px 0 hsl(195, 70%, 60%)
+  
+//.btn.st6
+  
+      

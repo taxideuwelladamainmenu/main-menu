@@ -1,0 +1,175 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  text-align: center;
+}
+* {
+  box-sizing: border-box;
+}
+.cont-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 10rem);
+  grid-gap: 2rem;
+  align-content: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.btn {
+  background-color: #125368;
+  color: #e3e7e8;
+  padding: 1rem 2rem;
+  display: inline-block;
+  font-size: 1.5rem;
+  cursor: pointer;
+  position: relative;
+  user-select: none;
+  transition: 0.3s;
+}
+.btn:hover {
+  background-color: #1f637a;
+}
+.btn:active {
+  background-color: #0a475c;
+}
+.btn.st1:hover {
+  background-color: #1f637a;
+}
+.btn.st1:hover::before,
+.btn.st1:hover::after {
+  border-color: #1f637a;
+  transition: 0.3s;
+}
+.btn.st1:hover::before {
+  top: -0.5em;
+  left: -0.5em;
+}
+.btn.st1:hover::after {
+  bottom: -0.5em;
+  right: -0.5em;
+}
+.btn.st1::before,
+.btn.st1::after {
+  content: ' ';
+  transition: 0.3s;
+  height: 50%;
+  width: 50%;
+  position: absolute;
+  border-color: #125368;
+  border-width: 0.15em;
+  background-color: transparent;
+}
+.btn.st1::before {
+  top: -0.15em;
+  left: -0.15em;
+  border-style: solid none none solid;
+}
+.btn.st1::after {
+  bottom: -0.15em;
+  right: -0.15em;
+  border-style: none solid solid none;
+}
+.btn.st1:active {
+  background-color: #0a475c;
+}
+.btn.st2::before,
+.btn.st2::after {
+  content: ' ';
+  transition: 0.3s;
+  height: 100%;
+  width: 1em;
+  position: absolute;
+  top: 0;
+  border: none;
+}
+.btn.st2::before {
+  left: 0;
+  border-left: 0.15em solid #125368;
+}
+.btn.st2::after {
+  right: 0;
+  border-right: 0.15em solid #125368;
+}
+.btn.st2:hover::before,
+.btn.st2:hover::after {
+  border-color: #125368;
+}
+.btn.st2:hover::before {
+  left: -0.5em;
+}
+.btn.st2:hover::after {
+  right: -0.5em;
+}
+.btn.st3::before,
+.btn.st3::after {
+  content: '';
+  position: absolute;
+  width: 1em;
+  height: 100%;
+  transition: 0.3s;
+}
+.btn.st3::before {
+  top: -0.1em;
+  left: -0.1em;
+  border-radius: 2em 0 0 0;
+  border-top: 0.1em solid #fff;
+  border-left: 0.1em solid #fff;
+}
+.btn.st3::after {
+  bottom: -0.1em;
+  right: -0.1em;
+  border-radius: 0 0 2em 0;
+  border-bottom: 0.1em solid #fff;
+  border-right: 0.1em solid #fff;
+}
+.btn.st3:hover::before,
+.btn.st3:hover::after {
+  border-radius: 0;
+}
+.btn.st4::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 2px;
+  height: 100%;
+  width: 1em;
+  border-radius: 50%;
+  box-shadow: -4px 0px 0px 4px #0a475c;
+}
+.btn.st4::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 2px;
+  height: 100%;
+  width: 1em;
+  border-radius: 50%;
+  box-shadow: 4px 0px 0px 4px #0a475c;
+}
+.btn.st5::before,
+.btn.st5::after {
+  transition: 0.3s;
+  content: '';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 0.1em;
+}
+.btn.st5::before {
+  left: 0;
+  box-shadow: -2px 0px 0px 0 #176782, -4px 0px 0px 0 #1f8aad, -6px 0px 0px 0 #26acd9, -8px 0px 0px 0 #52bde0;
+}
+.btn.st5::after {
+  right: 0;
+  box-shadow: 2px 0px 0px 0 #176782, 4px 0px 0px 0 #1f8aad, 6px 0px 0px 0 #26acd9, 8px 0px 0px 0 #52bde0;
+}
+.btn.st5:hover::before {
+  transition: 0.3s;
+  box-shadow: -4px 0px 0px 0 #176782, -8px 0px 0px 0 #1f8aad, -12px 0px 0px 0 #26acd9, -16px 0px 0px 0 #52bde0;
+}
+.btn.st5:hover::after {
+  transition: 0.3s;
+  box-shadow: 4px 0px 0px 0 #176782, 8px 0px 0px 0 #1f8aad, 12px 0px 0px 0 #26acd9, 16px 0px 0px 0 #52bde0;
+}
