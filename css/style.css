@@ -50,7 +50,7 @@ h3 {
 LINK STYLE
 ------------------------------------------*/
 a {
-    color           : #fcbb3c;
+    /* color           : #3c65fc; */
     text-decoration : none;
     transition      : all 0.3s ease 0s;
 }
@@ -67,7 +67,7 @@ a:active {
 
 a:hover,
 a:focus {
-    color           : #e89b04;
+    color           : #0440e8;
     text-decoration : none !important;
 }
 
@@ -89,7 +89,7 @@ GLOBAL BUTTON STYLE
 /*btn-primary*/
 .btn-primary {
     color: #fff;
-    background-color: #fcbb3c;
+    background-color: #3c80fc;
     border-color: #fba90a;
 }
 
@@ -99,7 +99,7 @@ GLOBAL BUTTON STYLE
 .btn-primary:active, 
 .btn-primary.active, 
 .open>.dropdown-toggle.btn-primary {
-	color: #e89b04;
+	color: #04c8e8;
 	background: transparent;
 	border: 2px solid #e0e0e0;
 }
@@ -434,7 +434,7 @@ NAVIGATION
 .navbar-default .navbar-nav>.open>a, 
 .navbar-default .navbar-nav>.open>a:hover, 
 .navbar-default .navbar-nav>.open>a:focus {
-    color: #fcbb3c;
+    color: #27c0d0;
     background-color: transparent;
 }
 
@@ -526,7 +526,7 @@ SERVICE WRAPPER
 }
 
 .service-wrapper .media-heading a:hover{
-    color: #fcbb3c;
+    color: #3cfcea;
 }
 
 
